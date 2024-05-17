@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/customerservice
+    url: jdbc:postgresql://postgres:5432/customerservice
     username: postgres
     password: test
   jpa:
@@ -18,6 +18,6 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8888/eureka/
+      defaultZone: http://discovery-server:8888/eureka/
     registerWithEureka: true
     fetchRegistry: true
