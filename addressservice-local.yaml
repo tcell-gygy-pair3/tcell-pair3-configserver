@@ -9,8 +9,14 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
+  cloud:
+    config:
+      enabled: false
+
 server:
-  port: 8081
+  port: 8090
+  error:
+    include-message: always
 
 eureka:
   client:
