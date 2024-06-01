@@ -1,4 +1,6 @@
 spring:
+  jackson:
+    time-zone: Europe/Istanbul
   datasource:
     url: jdbc:postgresql://localhost:5432/productservice
     username: postgres
