@@ -1,15 +1,21 @@
-spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/cartservice
-    username: postgres
-    password: test
-  jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-    hibernate:
-      ddl-auto: update
+#spring:
+ # datasource:
+  #  url: jdbc:postgresql://localhost:5432/cartservice
+   # username: postgres
+    #password: test
+  #jpa:
+   # properties:
+    #  hibernate:
+     #   dialect: org.hibernate.dialect.PostgreSQLDialect
+    #hibernate:
+     # ddl-auto: update
 
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: cartservice
 
       
 server:
