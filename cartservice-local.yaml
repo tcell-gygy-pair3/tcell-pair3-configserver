@@ -1,22 +1,22 @@
-spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/cartservice
-    username: postgres
-    password: test
-  jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-    hibernate:
-      ddl-auto: update
-
 #spring:
- # data:
-  #  mongodb:
-   #   uri: mongodb://localhost:27017/cartservice
+  #datasource:
+   # url: jdbc:postgresql://localhost:5432/cartservice
+    #username: postgres
+    #password: test
+  #jpa:
+   # properties:
+    #  hibernate:
+     #   dialect: org.hibernate.dialect.PostgreSQLDialect
+    #hibernate:
+     # ddl-auto: update
 
- # autoconfigure:
-  #  exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/cartservice
+
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 
 
 
