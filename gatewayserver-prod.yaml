@@ -48,7 +48,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8888/eureka/
+      defaultZone: http://gateway-server-prod:8888/eureka/
     registerWithEureka: true
     fetchRegistry: true
 
