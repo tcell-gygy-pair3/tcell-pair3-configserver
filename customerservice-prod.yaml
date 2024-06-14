@@ -18,6 +18,6 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8888/eureka/
+      defaultZone: http://customer-db-prod:8888/eureka/
     registerWithEureka: true
     fetchRegistry: true
