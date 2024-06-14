@@ -18,7 +18,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://identity-db-prod:8888/eureka/
+      defaultZone: http://discovery-server:8888/eureka/
     registerWithEureka: true
     fetchRegistry: true
 
