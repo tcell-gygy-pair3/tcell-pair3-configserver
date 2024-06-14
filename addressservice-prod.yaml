@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://address-db-prod:5434/addressservice
+    url: jdbc:postgresql://address-db-prod:5432/addressservice
     username: postgres
     password: test
   jpa:
