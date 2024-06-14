@@ -4,6 +4,6 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery-server-prod:8888/eureka/
+      defaultZone: http://discovery-server:8888/eureka/
     registerWithEureka: false
     fetchRegistry: false
