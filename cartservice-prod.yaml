@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://cart-db:5432/cartservice
+    url: jdbc:postgresql://cart-db-prod:5432/cartservice
     username: postgres
     password: test
   jpa:
