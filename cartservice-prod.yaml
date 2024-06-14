@@ -1,14 +1,11 @@
 spring:
-  datasource:
-    url: jdbc:postgresql://cart-db-prod:5432/cartservice
-    username: postgres
-    password: test
-  jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-    hibernate:
-      ddl-auto: update
+  data:
+    mongodb:
+      uri: mongodb://cart-db:27017/cartservice
+
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
       
 server:
   port: 8082
