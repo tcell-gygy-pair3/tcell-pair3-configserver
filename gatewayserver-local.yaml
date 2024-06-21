@@ -33,14 +33,10 @@ spring:
             uri: lb://orderservice
             predicates:
               - Path=/api/v1/orders/**
-          - id: productservice-product
+          - id: productservice
             uri: lb://productservice
             predicates:
               - Path=/api/v1/products/**
-          - id: productservice-catalog
-            uri: lb://productservice
-            predicates:
-              - Path=/api/v1/catalogs/**
           - id: customerservice
             uri: lb://customerservice
             predicates:
