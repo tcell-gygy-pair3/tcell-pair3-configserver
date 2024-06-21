@@ -10,19 +10,11 @@ spring:
           - id: cartservice
             uri: lb://cartservice
             predicates:
-              - Path=/api/v1/cart/**
+              - Path=/api/v1/carts/**
           - id: invoiceservice
             uri: lb://invoiceservice
             predicates:
               - Path=/api/v1/invoice/**
-          - id: productservice
-            uri: lb://productservice
-            predicates:
-              - Path=/api/v1/product/**
-          - id: userservice
-            uri: lb://userservice
-            predicates:
-              - Path=/api/v1/user/**
           - id: eureka
             uri: http://localhost:8888
             predicates:
@@ -33,14 +25,34 @@ spring:
             uri: http://localhost:8888
             predicates:
                 - Path=/eureka/**
-          - id: authserver
-            uri: lb://authserver
+          - id: identityserver
+            uri: lb://identityserver
             predicates:
               - Path=/api/v1/auth/**
-          - id: authserver
-            uri: lb://authserver
+          - id: orderservice
+            uri: lb://orderservice
             predicates:
-              - Path=/api/v1/auth/**
+              - Path=/api/v1/orders/**
+          - id: productservice-product
+            uri: lb://productservice
+            predicates:
+              - Path=/api/v1/products/**
+          - id: productservice-catalog
+            uri: lb://productservice
+            predicates:
+              - Path=/api/v1/catalogs/**
+          - id: customerservice-customer
+            uri: lb://customerservice
+            predicates:
+              - Path=/api/v1/customers/**
+          - id: customerservice-customerInvoice
+            uri: lb://customerservice
+            predicates:
+              - Path=/api/v1/customerInvoices/**
+          - id: customerservice-contactMedium
+            uri: lb://productservice
+            predicates:
+              - Path=/api/v1/contactMediums/**
 server:
   port: 8080
 
