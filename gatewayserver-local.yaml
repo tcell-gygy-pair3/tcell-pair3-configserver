@@ -6,7 +6,7 @@ spring:
           - id: addressservice
             uri: lb://addressservice
             predicates:
-              - Path=/api/v1/address/**
+              - Path=/api/v1/addresses/**
           - id: cartservice
             uri: lb://cartservice
             predicates:
