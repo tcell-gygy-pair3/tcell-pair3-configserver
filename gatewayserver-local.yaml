@@ -45,14 +45,7 @@ spring:
             uri: lb://customerservice
             predicates:
               - Path=/api/v1/customers/**
-          - id: customerservice-customerInvoice
-            uri: lb://customerservice
-            predicates:
-              - Path=/api/v1/customerInvoices/**
-          - id: customerservice-contactMedium
-            uri: lb://productservice
-            predicates:
-              - Path=/api/v1/contactMediums/**
+         
 server:
   port: 8080
 
